@@ -1,0 +1,60 @@
+<html>
+    <style>
+        #textbox{
+            position: absolute;
+            top: 50px;
+            right: 300px;
+            background-color: rgb(202, 168, 240);
+            width: 150px;
+            height: 150px;
+            animation-name: fluid;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+        }
+        #textbox2{
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            background-color: rgb(202, 168, 240);
+            width: 450px;
+            height: 150px;
+            animation-name: fluid2;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes fluid{
+            0%   {background-color:rgb(255, 225, 0); left:670px; top:400px;}
+            25%  {background-color:rgb(240, 240, 3); left:200px; bottom:70px;}
+            50%  {background-color:rgb(199, 196, 3); left:930px; top:1120px;} 
+            65%  {background-color:rgb(255, 183, 0); left:100px; bottom:700px;}
+            89%  {background-color:rgb(255, 140, 0); left:347px; bottom:1540px;}
+            100% {background-color:rgb(255, 102, 0); left:700px; top:290px;}
+        }
+        @keyframes fluid2{
+            0%   {background-color:rgb(221, 174, 249); left:500px; top:0px;}
+            15%  {background-color:rgb(142, 43, 255); left:800px; bottom:70px;}
+            30%  {background-color:rgb(137, 3, 199); left:130px; top:1120px;}
+            65%  {background-color:rgb(156, 2, 252); left:1px; top:99px;}
+            80%  {background-color:rgb(68, 4, 120); left:120px; top:100px;}
+            92%  {background-color:rgba(255, 2, 225, 0.455); left:110px; top:219px;}
+            100% {background-color:rgb(234, 0, 255); left:700px; top:290px;}
+        }
+
+    </style>
+    <body>
+        <head>
+            <title>
+                Go there
+            </title>
+            <meta http-equiv="refresh" content="4; URL='https://cci.arts.ac.uk/~itgupta/week_2_HTMLbody/gohere.html'" />
+        </head>
+        <p id = 'textbox'>
+            In the fastlane
+        </p>
+        <p  id = 'textbox2'>
+            Catch me (if you can)!
+        </p>
+        
+    </body>
+    
+</html>

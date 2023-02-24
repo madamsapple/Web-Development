@@ -1,0 +1,262 @@
+body{
+    background-image: url("fancy_bg.gif");
+}
+
+@font-face {
+    font-family: "arcadefont";
+    src: url(ARCADE.TTF);
+}
+
+
+@keyframes slide{
+    /* 
+    from <these html elements> turn them into
+    <these modified html elements>
+    */
+    from{
+        left:200px;
+    }
+    to{
+         left:1000px;
+    }
+}
+
+#box1{
+    display:block;
+    position:absolute;
+    left: 200px;
+    top: 400px;
+    background-color: lightsalmon;
+    animation-name: slide;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+
+@keyframes spaceship{
+    /* 
+    from <these html elements> turn them into
+    <these modified html elements>
+    */
+     from{
+         left:1000px;
+     }
+     to{
+         left: 100px;
+     }
+}
+
+/*how to make an oval
+introduce border radius*/
+#ship1{
+    width: 400px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: darkslateblue;
+    position: absolute;
+    left: 250px;
+    top: 150px;
+    animation-name: spaceship;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* Animations for the main title*/
+@keyframes title{
+    from{
+        left:60px;
+    }
+    to{
+        left:1000px;
+    }
+}
+
+p1{
+    font-family: arcadefont;
+    color: aliceblue;
+    font-size: 40px;
+    position: relative;
+    top: -20px;
+    animation: title;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#say{
+    animation-duration: 8s;
+}
+
+/* animations for all the letters */
+
+/* H */
+@keyframes title2{
+    from{
+        left:60px;
+    }
+    to{
+        left: 900px;
+    }
+}
+
+/* E */
+@keyframes title3{
+    from{
+        left:60px;
+    }
+    to{
+        left: 904px;
+    }
+}
+
+/* L */
+@keyframes title4{
+    from{
+        left:60px;
+    }
+    to{
+        left: 908px;
+    }
+}
+
+/* O */
+@keyframes title5{
+    from{
+        left:60px;
+    }
+    to{
+        left: 912px;
+    }
+}
+
+#letter-H{
+    position: relative;
+    top: 10px;
+    animation-name: title2;
+    animation-duration: 9.2s;
+}
+#letter-E{
+    position: relative;
+    top: 10px;
+    animation-name: title3;
+    animation-duration: 9.2s;
+}
+#letter-L{
+    position: relative;
+    top: 10px;
+    animation-name: title4;
+    animation-duration: 9.5s;
+}
+#letter-O{
+    position: relative;
+    top: 10px;
+    animation-name: title5;
+    animation-duration: 9.8s;
+}
+
+@keyframes theborgs{
+    from{
+        left:0px;
+    }
+    to{
+        left: 400px;
+    }
+}
+#theborgs{
+    position: relative;
+    top: 430px;
+    animation-name: theborgs;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes ship2{
+
+    from{
+        left:800px;
+    }
+    to{
+        left: 200px;
+    }
+}
+
+#ship2{
+    width: 80px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(230, 226, 254);
+    position: absolute;
+    left: 800px;
+    top: 210px;
+    animation-name: ship2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes ship3{
+
+    from{
+        left:600px;
+    }
+    to{
+        left: 100px;
+    }
+}
+
+#ship3{
+    width: 80px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(230, 226, 254);
+    position: absolute;
+    left: 700px;
+    top: 210px;
+    animation-name: ship3;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;    
+}
+
+/*left yellow traingle of big purple spaceship*/
+#spcship_lefttri{
+    width         : 0;
+    height        : 0;
+    border-left   : 100px solid transparent;
+    border-right  : 100px solid transparent;  
+    border-bottom : 100px solid rgb(255, 183, 0);
+    position: relative;
+    top: 300px;
+    animation-name: spaceship;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes rightri{
+
+    from{
+        left:1200px;
+    }
+    to{
+        left: 300px;
+    }
+}
+#spcship_rightri{
+    width:0;
+    height:0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;  
+    border-bottom: 100px solid rgb(255, 183, 0);
+    position: absolute;
+    top: 308px;
+    left: 445px;
+    animation-name: rightri;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+

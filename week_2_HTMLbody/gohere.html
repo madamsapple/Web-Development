@@ -1,0 +1,75 @@
+<html>
+    <!--
+        Keyframes is used to define the animation for a particular element
+        meta tag always goes inside head<> tag, which handles links/titles as
+        compared to header<> which handles visual layout of text and stuff
+        the http-equiv property is always set to refresh to refresh the current page
+        content defines the duration after which the new webpage will load
+        URL accepts the redirected webpage's address
+    -->
+    <style>
+        #textbox{
+            position: absolute;
+            top: 50px;
+            right: 300px;
+            background-color: rgb(202, 168, 240);
+            width: 150px;
+            height: 150px;
+            animation-name: fluid;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+        }
+        #textbox2{
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            background-color: rgb(202, 168, 240);
+            width: 450px;
+            height: 150px;
+            animation-name: fluid2;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes fluid{
+            0%   {background-color:rgb(255, 225, 0); left:2500px; top:0px;}
+            15%  {background-color:rgb(240, 3, 169); left:200px; bottom:70px;}
+            30%  {background-color:rgb(19, 199, 3); left:930px; top:1120px;}
+            75%  {background-color:rgb(99, 6, 37); left:1px; top:99px;}
+            80%  {background-color:rgb(2, 65, 173); left:120px; top:100px;}
+            85%  {background-color:rgb(12, 255, 255); left:400px; top:2200px;}
+            87%  {background-color:rgb(77, 64, 18); left:2400px; top:4000px;}
+            92%  {background-color:rgb(2, 91, 255); left:1110px; top:2119px;}
+            95%  {background-color:rgb(255, 183, 0); left:21000px; bottom:700px;}
+            99%  {background-color:rgb(146, 23, 34); left:347px; bottom:1540px;}
+            100% {background-color:rgb(214, 204, 197); left:700px; top:2990px;}
+        }
+        @keyframes fluid2{
+            0%   {background-color:rgba(221, 174, 249, 0.24); left:2500px; top:0px;}
+            15%  {background-color:rgba(142, 43, 255, 0.784); left:200px; bottom:70px;}
+            30%  {background-color:rgba(100, 72, 32, 0.133); left:930px; top:1120px;}
+            65%  {background-color:rgb(156, 2, 252); left:1px; top:99px;}
+            80%  {background-color:rgb(120, 78, 4); left:120px; top:100px;}
+            92%  {background-color:rgba(255, 209, 2, 0.455); left:1110px; top:2119px;}
+            100% {background-color:rgba(234, 0, 255, 0.195); left:700px; top:2990px;}
+        }
+
+    </style>
+    <script>
+        window.location.replace("https://cci.arts.ac.uk/~itgupta/week_2_HTMLbody/gothere.html")
+    alert();
+    </script>
+    <body>
+        <head>
+            <title> Go here</title>
+            
+        </head>
+        <p id = 'textbox'>
+            I keep moving around
+        </p>
+        <p  id = 'textbox2'>
+            Catch me!
+        </p>
+        
+    </body>
+    
+</html>

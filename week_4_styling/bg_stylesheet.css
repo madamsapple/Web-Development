@@ -1,0 +1,24 @@
+/*
+
+:hover always signifies the color when you hover above a text
+
+a:active specifies the color when clicking the link
+*/
+
+
+
+body{
+    background-image: url("ombre-bg.jpeg");
+    
+}
+
+ul > li:hover{
+    background-color: aquamarine;
+
+}
+
+a:active{
+    color: rgb(208, 127, 255);
+
+}
+

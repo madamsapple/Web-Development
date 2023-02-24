@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- Page uses indexstyling as well as separate CSS styling-->
+    <link href="indexstyling.css" rel="stylesheet">
+    <style>
+        .topnav {
+            height: 40px;
+            width: 600px;
+            display: block;
+            margin-top: -10px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #111;
+            text-align: center;
+        }
+
+        .topnav a {
+            padding: 0px 28px 12px 28px;
+            text-decoration: none;
+            font-size: 23px;
+            color: #fffaef;
+        }
+
+        .topnav a:hover {
+            color: #ffc558;
+        }
+
+        /*Weekly Tasks links styling*/
+        ul {
+            display: flex;
+            list-style-type: none;
+            margin-top: 100px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        li {
+            display: inline;
+            padding-right: 50px;
+            margin-right: auto;
+            margin-left: auto;
+            font-size: 24px;
+        }
+
+        ul a:link,
+        ul a:visited {
+            color: black;
+        }
+
+        ul a:hover,
+        ul a:active {
+            color: rgb(34, 11, 112);
+        }
+
+        /* Flexbox for weekly tasks text*/
+        .visualflex {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .visualflex > div {
+            width: 7%;
+            height: 260px;
+            background-color: #ffc558;
+            margin: 3%;
+        }
+
+        /*Colored Rectangles under each week*/
+        .square {
+            width: 120px;
+            height: 460px;
+            background-color: #ffc558;
+        }
+
+        /*CSS animations for all colored rectangles*/
+        @keyframes wk1 {
+            from {
+                background-color: #ffc558;
+            }
+
+            to {
+                background-color: #ff8d58;
+            }
+        }
+
+        @keyframes wk2 {
+            from {
+                background-color: #ff8d58;
+            }
+
+            to {
+                background-color: #fc7131;
+            }
+        }
+
+        @keyframes wk3 {
+            from {
+                background-color: #fc7131;
+            }
+
+            to {
+                background-color: #fb5000;
+            }
+        }
+
+        @keyframes wk4 {
+            from {
+                background-color: #fb5000;
+            }
+
+            to {
+                background-color: #c32700;
+            }
+        }
+
+        @keyframes wk5 {
+            from {
+                background-color: #c32700;
+            }
+
+            to {
+                background-color: #c34800;
+            }
+        }
+
+        @keyframes wk7 {
+            from {
+                background-color: #c35e00;
+            }
+
+            to {
+                background-color: #8a4300;
+            }
+        }
+
+        @keyframes wk8 {
+            from {
+                background-color: #c34800;
+            }
+
+            to {
+                background-color: #c35e00;
+            }
+        }
+    </style>
+
+    <title>Weekly Tasks</title>
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="../index.html">Home</a>
+        <a href="projects_page/projects.html">Projects</a>
+        <a href="about_socials.html">About + Socials</a>
+    </div>
+
+    <h1 style="margin-top: 5.8%; text-align: center"> Weekly Tasks</h1>
+
+    <!-- List of Weekly Tasks under a flexbox -->
+    <ul>
+        <li> <a href="../week_1_anatomy/helloworld.html">Wk1. Hello, Introduction </a>
+            <div class="square" style="animation-name: wk1;
+                         animation-duration: 1s;
+                         animation-iteration-count: infinite;
+                         animation-direction: alternate;">
+            </div>
+        </li>
+
+        <li> <a href="../week_2_HTMLbody/index.html">Wk2. Links, Structure </a>
+            <div class="square" style="animation-name: wk2;
+                         animation-duration: 1s;
+                         animation-iteration-count: infinite;
+                         animation-direction: alternate;">
+            </div>
+        </li>
+
+        <li> <a href="http://127.0.0.1:8887/FlowerStory.html">Wk3. Input Types </a>
+            <div class="square" style="animation-name: wk3;
+                         animation-duration: 1s;
+                         animation-iteration-count: infinite;
+                         animation-direction: alternate;">
+            </div>
+        </li>
+
+
+        <li> <a href="../week_4_styling/sample.html">Wk4. Hover Links </a>
+            <div class="square" style="animation-name: wk4;
+                         animation-duration: 1s;
+                         animation-iteration-count: infinite;
+                         animation-direction: alternate;">
+            </div>
+        </li>
+
+        <li> <a href="../week_5_layouts/responsive.html">Wk5. Responsive Buildings </a>
+            <div class="square" style="animation-name: wk5;
+                         animation-duration: 1s;
+                         animation-iteration-count: infinite;
+                         animation-direction: alternate;">
+            </div>
+        </li>
+
+        <li> <a href="../week_7_cssanim/animation.html">Wk7. Sliding Borgs </a>
+            <div class="square" style="animation-name: wk7;
+                         animation-duration: 1s;
+                         animation-iteration-count: infinite;
+                         animation-direction: alternate;">
+            </div>
+        </li>
+
+        <li> <a href="../week_8_jsdom/myfirstjs.html">Wk8. DOM practice </a>
+            <div class="square" style="animation-name: wk8;
+                         animation-duration: 1s;
+                         animation-iteration-count: infinite;
+                         animation-direction: alternate;">
+            </div>
+        </li>
+    </ul>
+
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<html>
+    <title>
+        Homepage
+    </title>
+
+<!-- 
+    p (paragraph tag) is a selector in CSS
+    it selects p elements for styling
+
+    p, li refers to all paragraph and list elements
+    the comma indicates that they will have common indentation
+    
+    p > li
+    > is a child selector
+    selects all children elements of p, which is 'li'/list elements
+
+    multiple properties under a selector will be separated by ;
+
+    ??pi.second > li doesn't work
+-->
+    <style>
+        @keyframes head_transition{
+            0% {background-color: bisque;}
+            10%{background-color:darkgoldenrod;}
+            20%{background-color:beige}
+            30%{background-color:rgb(249, 224, 161);}
+            40%{background-color:rgb(132, 121, 4);}
+            50%{background-color:rgb(222, 162, 11);}
+            60%{background-color:rgb(184, 103, 11);}
+            70%{background-color:rgb(137, 73, 0);}
+            80%{background-color:rgb(255, 177, 74);}
+            90%{background-color:rgb(230, 198, 162);}
+            100%{background-color:rgb(184, 77, 11);}
+        }
+        header{
+            animation-name: head_transition;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        h1 {
+            text-align: center;
+        }
+        p {
+            background-color:chocolate;
+            font-size: 30px
+        }
+        p, li {
+            text-indent: 230px;   
+        }
+        p > li {
+            list-style-type: circle;
+        }
+        p.second{
+            text-indent: 530px;
+            vertical-align: text-bottom
+        }
+        p.second > li{
+            text-indent: 930px;
+        }
+    </style>
+    <header>
+        <h1>
+            This is a shared Dungeon.
+        </h1>
+    </header>
+
+    <body>
+        <p >
+            Navigate.
+                <li class = 'menu1'>
+                    <a href = "https://itig2003.wixsite.com/itig-portfolio"> Portfolio </a>
+                </li>
+                <li>
+                    <a href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'> random TED Talk</a>
+                </li>
+                <li>
+                    <a href = "afunnypage.html"> Comedy</a>
+                </li>
+        </p>
+
+        <p class = 'second'>
+            What's this?
+                <li>
+                    <a href = "wgaca.html"> What goes around, comes around</a>
+                </li>
+                <li>
+                    <a href = "experiment.html"> This is an experiment</a>
+                </li>
+                <li>
+                    <a href = "gohere.html"> Go here</a>
+                </li>
+                <li>
+                    <a href = "gothere.html"> or go there...?</a>
+                </li>
+        </p>
+    </body>
+</html>
+
+<!--  -->

@@ -1,0 +1,107 @@
+/* */
+
+/*
+CSS Styling for main website
+*/
+
+@font-face {
+    font-family: custom;
+    src: url(index_assets/Raleway-Light.ttf);
+}
+
+header {
+    font-family: custom;
+}
+
+body {
+    background-color: #F7EFCA;
+    font-family: custom;
+}
+
+@keyframes sun {
+    from {background-color: rgb(243, 198, 0);}
+    to {background-color: rgb(202, 91, 0);}
+}
+  
+
+  /* The element to apply the animation to */
+.sun > div {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    left: 79%;
+    top: 3%;
+    background-color: rgb(223, 144, 41);
+    animation-name: sun;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.header-flex {
+    display: flex;
+    height: 170px;
+    /*Align-items is for vertical alignment of all items across the height of the flexbox*/
+    align-items: center;
+    /*Justify aligns is for horizontal alignment across the width of the flexbox*/
+    justify-content: center;
+}
+
+/* All children div elements under this flexbox */
+.header-flex > div {
+    background-color: #f1f1f100;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+/*separate Flexbox for main contents of the website*/
+.maincont-flex {
+    display: flex;
+    /* Margin or one its edges can position the flexbox at whatever position you want
+    instead of placing one flexbox right after another (like a block element)*/
+    margin-top: 0%;
+    align-items: center;
+    justify-content: center;
+}
+
+.maincont-flex > div {
+    display: flexbox;
+    background-color: #ddb446;
+    width: 135px;
+    height: 110px;
+    margin: 120px;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Color of main links in the webpage */
+.maincont-flex a:link,.maincont-flex a:visited {
+    color: black;
+    line-height: 1.7;
+}
+
+/* The animation code */
+/* Grass container is bg for flower animation 
+   z-index allows the bg to avoid overlapping imp text*/
+#container {
+    display: flex;
+    position: fixed;
+    z-index: -1;
+    bottom: -3px;
+    background-image: url(index_assets/grass.png);
+    height: 294px;
+    width: 1443px;
+    margin-left: -10px;
+    margin-right: -3px;
+}
+
+/* class "flower" for generating multiple flower elements*/
+.flower {
+    position: absolute;
+    background-image: url("index_assets/flower.png");
+    width: 82px;
+    height: 83.5px;
+}

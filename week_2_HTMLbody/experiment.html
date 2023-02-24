@@ -1,0 +1,51 @@
+<html>
+    <!-- by default div will be a square or rectangle with the
+    properties of width, height, and color
+    if border-radius property is added, then you can change it to a 
+    circle. set the border radius property to 50%
+
+    text-overflow property defines how the text is shown near the end
+    of a box after scrolling - is it omitted with ellipsis or is all the
+    text displayed
+    overflow prop itself describes whether there is an option to scroll,
+    bleed text out of a box, etc-->
+    <style>
+        #scrollme {
+            white-space: nowrap;
+            height: 23px;
+            width: 500px;
+            border: 6px solid #000000;
+            overflow: scroll;
+            text-overflow:clip
+            }
+        #box{
+            position: absolute;
+            top: 50px;
+            right: 300px;
+            background-color: rgb(225, 188, 203);
+            width: 150px;
+            height: 150px;
+            overflow: scroll;
+        }
+    </style>
+    <head>
+        <title>
+            Experiment
+        </title>
+    </head>
+    <body>
+        <p id = 'scrollme'>
+            Scroll me, scroll me, scroll me, 
+            Scroll me, scroll me, scroll me,
+            Scroll me, scroll me, scroll me,
+            Scroll me, scroll me, scroll me, 
+            Scroll me, scroll me, And scroll the other one! 
+        </p>
+        <p id = 'box'>
+            An autobiography bleeds into the crevices of this box.
+            An autobiography bleeds into the crevices of this box.
+            An autobiography bleeds into the crevices of this box.
+            An autobiography bleeds into the crevices of this box.
+        </p>
+    </body>
+</html>

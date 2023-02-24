@@ -1,0 +1,84 @@
+/*
+CSS Styling for PROJECTS Page
+*/
+
+@font-face {
+    font-family: custom;
+    src: url(../index_assets/Raleway-Light.ttf);
+}
+
+header {
+    font-family: custom;
+}
+
+body {
+    background-color: #F7EFCA;
+    font-family: custom;
+    margin: 0px;
+}
+
+/*
+mothrb maze gallery styling
+*/
+
+
+/*gallery end*/
+
+.topnav {
+    height: 40px;
+    width: 600px;
+    display: block;
+    top: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #111;
+    text-align: center;
+}
+  
+.topnav a {
+    padding: 12px 28px 12px 28px;
+    text-decoration: none;
+    font-size: 23px;
+    color: #fffaef;
+
+}
+
+.topnav a:hover {
+    color: #ffc558;
+}
+
+.first-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sec-flex {
+    display: flex;
+    flex-wrap: wrap;
+    /*Justify aligns is for horizontal alignment across the width of the flexbox*/
+    justify-content: center;
+}
+
+.third-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+img {
+    margin: 10px;
+}
+
+p {
+    margin: 50px;
+    line-height: 1.9;
+}
+
+.gamejam > p {
+    margin-top: 300px;
+    line-height: 1.9;
+}
+
+.p5js > p {
+    margin: 570px;
+}

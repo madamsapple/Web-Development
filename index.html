@@ -1,0 +1,104 @@
+<!-- Main Page 
+     Resources: https://stackoverflow.com/questions/2570877/how-do-i-stick-an-image-to-the-bottom-of-the-visible-screen-and-be-centered
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Iti's Website</title>
+    <link href="index_folder/indexstyling.css" rel="stylesheet">
+</head>
+
+<header>
+    <h2>
+        <!-- New flex container called header-flex
+            h2 heading size is used for the only 1 div item -->
+        <div class="header-flex">
+            <div>Iti's Website</div>
+        </div>
+    </h2>
+</header>
+
+<body>
+
+    <!-- Sun animation with cloud bg-->
+    <img src="index_folder/index_assets/cloud1.png" alt="Cloud clipart" width="470" height="258"
+         style=" position:absolute; right:6%; top: 0.8%; z-index: -1;">
+    <div class="sun">
+        <div></div>
+    </div>
+
+    <!-- Flexbox includes all different webpages-->
+    <div class="maincont-flex">
+        <div> <a href="index_folder/projects_page/projects.html">Projects <br>+<br> Side Quests</a></div>
+        <div> <a href="index_folder/weeklytasks.html">Fun<br>with<br>HTML</a></div>
+        <div> <a href="index_folder/about_socials.html">About <br>+<br> Socials</a></div>
+    </div>
+
+    <!-- Grass background/container draws all flowers-->
+    <div id="container">
+        <div class="flower"></div>
+        <div class="flower"></div>
+        <div class="flower"></div>
+        <div class="flower"></div>
+        <div class="flower"></div>
+        <div class="flower"></div>
+        <div class="flower"></div>
+        <div class="flower"></div>
+        <div class="flower"></div>
+        <div class="flower"></div>
+        <div class="flower"></div>
+        <div class="flower"></div>
+        <div class="flower"></div>
+        <div class="flower"></div>
+        <div class="flower"></div>
+    </div>
+
+    <script>
+
+        let xpos = 0;
+        /*Selects all flower elements*/
+        const flowers = document.querySelectorAll(".flower");
+
+
+        let id = null;
+        let pos = window.innerHeight - 820;
+        let updown = 'up';
+        console.log(pos);
+        clearInterval(id);
+        id = setInterval(frame, 5);
+
+        /*sets flowers horizontally, one next to the other*/
+        for (let i = 0; i < flowers.length; i++) {
+            flowers[i].style.left = xpos + "px";
+            xpos += 100;
+        }
+
+
+        function frame() {
+
+            /*sets cutoff for bouncing flowers*/
+            if (pos <= window.innerHeight - 740) {
+                updown = 'down';
+            } else if (pos > window.innerHeight - 570) {
+                updown = 'up';
+            }
+
+            /*increase/decrease y pos depending on updown variable*/
+            if (updown == 'up') {
+                pos--;
+            } else /* when it is going down*/{
+                pos++;
+            }
+
+            for (let i = 0; i < flowers.length; i++) {
+                flowers[i].style.top = pos + "px";
+            }
+
+        }
+        frame();
+    </script>
+</body>
+
+</html>

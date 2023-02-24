@@ -1,0 +1,112 @@
+/* Styling for About_Socials page */
+
+@font-face {
+    font-family: custom;
+    src: url(index_assets/Raleway-Light.ttf);
+}
+
+header {
+    font-family: custom;
+}
+
+body {
+    background-color: #F7EFCA;
+    font-family: custom;
+}
+
+/* Animation for wave */
+.ocean { 
+    height: 5%;
+    width:100%;
+    position:absolute;
+    bottom:0;
+    left:0;
+    background: #015871;
+}
+  
+.wave {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; 
+    position: absolute;
+    top: -198px;
+    width: 6400px;
+    height: 198px;
+    animation: wave 7s cubic-bezier( 1, 0.45, 0.03, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+    /*affects the top margin placement of the second overlapping wave*/
+    top: -175px;
+    /* wave 7s affects the speed of the wave*/
+    /* cubic bezier changes the curve style eg how rapid is the wave (does it move like a whiplash?) */
+    animation: wave 5s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+    opacity: 1;
+}
+
+@keyframes wave {
+    0% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: -1600px;
+    }
+}
+
+@keyframes swell {
+    0%, 100% {
+        transform: translate3d(0,-25px,0);
+    }
+    50% {
+        transform: translate3d(0,5px,0);
+    }
+}
+
+.links-flexbox {
+    display: flex;
+    margin-top: 5%;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+/* All social links */
+.links-flexbox a:link, .links-flexbox a:visited {
+    background-color: #01c4c4;
+    color: black;
+    width: 100px;
+    height: 100%;
+    border: 10px #b0e7fd;
+    border-radius: 25px;
+    padding: 18px;
+    text-align: center;
+    margin-left: 180px;
+    font-size: 24px;
+}
+
+.links-flexbox a:hover,.links-flexbox a:active {
+    background-color: #006ac0;
+    color: white;
+}
+
+/* Top nav bar */
+.topnav {
+    height: 40px;
+    width: 600px;
+    display: block;
+    margin-top: -10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #111;
+    text-align: center;
+}
+  
+.topnav > a {
+    padding: 0px 28px 12px 28px;
+    text-decoration: none;
+    font-size: 23px;
+    color: #fffaef;
+}
+
+.topnav a:hover {
+    color: #ffc558;
+}
