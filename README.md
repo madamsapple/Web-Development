@@ -6,7 +6,7 @@ The homepage is the file "Index.html". The weekly tasks include my attempts at e
 
 I personally wanted to give a simple, rudimentary approach to my website's look and feel.
 I didn't involve any pre-made frameworks since I wanted to build everything from scratch.
-I focused on a few important projects to displaye and my links to social media, alongside
+I focused on a few important projects to display, along with links to social media, and
 lab work (weekly tasks). 
 
 The animations were put as a way to introduce some activity in the site apart from having 
